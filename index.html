@@ -17,17 +17,23 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
             }
 
             canvas {
                 position: absolute;
             }
+            
         </style>
     </head>
 
     <body>
         <p>HEY!</p>
         <video id="video" width="720" height="560" autoplay muted></video>
+        <div>
+            <p>extracted face is:</p>
+            <canvas id="face-canvas" width="720" height="560" ></canvas>
+        </div>
     </body>
 
 </html>
